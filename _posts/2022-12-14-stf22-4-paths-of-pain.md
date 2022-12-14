@@ -50,7 +50,7 @@ Source Code:
 The source code revealed to us that the secret weapon is in a file called 'blueprint.img'.
 We also observed that there is a hidden button that points to `?nopain=haha`
 
-![parameter.png]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12-14-stf22-4-paths-of-pain/parameter.png)
+![parameter.PNG]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12-14-stf22-4-paths-of-pain/parameter.PNG)
 
 Navigating to the URL, we see that the web application displaying the input after `?nopain=`
 
