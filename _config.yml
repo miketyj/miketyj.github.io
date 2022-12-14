@@ -65,7 +65,7 @@ plugins:
 author:
   name   : "Mike"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Digital Forensics and Incident Response"
+  bio    : "DFIR and something something something"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
