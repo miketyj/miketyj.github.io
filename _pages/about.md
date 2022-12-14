@@ -1,12 +1,11 @@
 ---
 permalink: /about/
 title: "About"
+redirect_from:
+  - /
 ---
 
->Bondservants, obey your earthly masters with fear and trembling, with a sincere heart, as you would Christ
->
-> -- Ephesians 6:5
-
+![about-photo.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/about-photo.jpg)
 
 Hello!
 
@@ -17,6 +16,10 @@ Before my professional career, I studied **Information Systems** in university. 
 Now I work **full-time** in Digital Forensics and Incident Response. When I'm not busy with work, I find time to learn new skills and challenge myself to take [certifications][certifications-url].
 
 I will do my best to maintain this blog from time to time. If this blog has helped you, please interact and leave a comment in any of the [posts][posts-url].
+
+>Bondservants, obey your earthly masters with fear and trembling, with a sincere heart, as you would Christ
+>
+> -- Ephesians 6:5
 
 
 
