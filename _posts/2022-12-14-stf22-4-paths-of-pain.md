@@ -1,6 +1,6 @@
 ---
 title: "Stack The Flags 2022 - 4 Paths of Pain (Misc)"
-date: 2022-12-11T09:34:30-04:00
+date: 2022-12-14T09:34:30-04:00
 categories:
   - CTF
 tags:
