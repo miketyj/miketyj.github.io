@@ -34,11 +34,11 @@ This is my writeup for one of the Misc challenge, **4 Paths of Pain**.
 
 
 Main Page:
-![index.PNG]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12-14-stf22-4-paths-of-pain/index.PNG)
+![index.png]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12-14-stf22-4-paths-of-pain/index.png)
 
 
 Source Code:
-![sourcecode.PNG]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12-14-stf22-4-paths-of-pain/sourcecode.PNG)
+![sourcecode.png]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12-14-stf22-4-paths-of-pain/sourcecode.png)
 
 ```html
 <h1>I can't seem to find the defense blueprints man</h1>
@@ -50,7 +50,7 @@ Source Code:
 The source code revealed to us that the secret weapon is in a file called 'blueprint.img'.
 We also observed that there is a hidden button that points to `?nopain=haha`
 
-![parameter.PNG]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12-14-stf22-4-paths-of-pain/parameter.PNG)
+![parameter.png]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12-14-stf22-4-paths-of-pain/parameter.png)
 
 Navigating to the URL, we see that the web application displaying the input after `?nopain=`
 
