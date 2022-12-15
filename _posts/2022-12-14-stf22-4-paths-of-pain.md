@@ -13,7 +13,7 @@ comments: true
 ---
 
 
-Recently, a few colleagues and I participated in **Stack The Flags 2022**, a CTF organised by **Govtech Singapore**. Like most CTF players, my goal was to learn a thing or two from trying to solve the challenges regardless on whether I succeed.
+Recently, a few colleagues and I participated in **Stack The Flags 2022**, a CTF organised by **Govtech Singapore**. My goal was to learn a thing or two from trying to solve the challenges even if I was not able to successfully complete them.
 
 The CTF was 48 hours and had over 50 challenges spanning from multiple categories such as Forensics, Web, Crypto, OSINT and etc.
 
@@ -52,7 +52,7 @@ We also observed that there is a hidden button that points to `?nopain=haha`
 
 ![parameter.png]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12-14-stf22-4-paths-of-pain/parameter.png)
 
-Navigating to the URL, we see that the web application displaying the input after `?nopain=`
+Navigating to the URL, we see that the web application displays the input after `?nopain=`
 
 With this knowledge, we probe further using Postman to try and find more information about the webserver.
 
