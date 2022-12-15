@@ -1,8 +1,6 @@
 ---
 permalink: /about/
 title: "About"
-redirect_from:
-  - /
 ---
 
 ![about-photo.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/about-photo.jpg)
