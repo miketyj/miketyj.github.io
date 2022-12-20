@@ -122,4 +122,8 @@ tag_archive:
 sass:
   sass_dir: src/_sass
 
-google_analytics: UA-252383256-1
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-252383256-1"
+    anonymize_ip: false # default
