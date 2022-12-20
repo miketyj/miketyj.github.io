@@ -121,3 +121,5 @@ tag_archive:
 
 sass:
   sass_dir: src/_sass
+
+google_analytics: UA-252383256-1
