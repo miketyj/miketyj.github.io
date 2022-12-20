@@ -123,7 +123,7 @@ sass:
   sass_dir: src/_sass
 
 analytics:
-  provider: "google-gtag"
+  provider: "google-universal"
   google:
     tracking_id: "UA-252383256-1"
     anonymize_ip: false # default
