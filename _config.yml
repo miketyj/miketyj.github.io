@@ -127,3 +127,6 @@ analytics:
   google:
     tracking_id: "UA-252383256-1"
     anonymize_ip: false # default
+
+repository:
+  miketyj/miketyj.github.io
