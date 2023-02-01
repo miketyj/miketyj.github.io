@@ -10,10 +10,7 @@ tags:
   - Flask
   - Jinja2
 comments: true
-header:
-  overlay_image: "/assets/images/2022-12-14-stf22-4-paths-of-pain/likemike_six_paths_of_pain_forensics_hacking_computer_trees_bac_a297c5f9-668b-448a-9792-55cf36318c2b.png"
-  overlay_filter: 0.5
-  teaser: "/assets/images/2022-12-14-stf22-4-paths-of-pain/likemike_six_paths_of_pain_forensics_hacking_computer_trees_bac_a297c5f9-668b-448a-9792-55cf36318c2b.png"
+
 ---
 
 
@@ -25,7 +22,7 @@ This is my writeup for one of the Misc challenge, **4 Paths of Pain**.
 
 ![pain.png]({{ site.url }}{{ site.baseurl }}/assets/images/2022-12-14-stf22-4-paths-of-pain/pain.jpg)
 
-## 4 Paths of Pain
+## 4 Paths of Pain 
 
 * Flag: ```STF22{P41n_1s_411_th3_s4m3}```
 * Category: Misc
