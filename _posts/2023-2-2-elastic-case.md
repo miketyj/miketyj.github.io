@@ -66,17 +66,21 @@ Upon expanding the value ```ZGRkOTM3YWEtOTQ0YS00ZmFiLWIzNjItZTM0NjJhODM0MWNjLTEz
 * Search Query: ```file.name:Account_details.pdf.exe```
 ![6-higher-privilege-user.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/6-higher-privilege-user.jpg)
 
+This was the only other user that ran the same malicious file.
+
 ### 6. The attacker was able to upload a DLL file of size 8704. What is the file name?
 * Flag: ```mCblHDgWP.dll```
 * Points: 100
 * Search Query: ```file.size:8704```
 ![7-dll.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/7-dll.jpg)
+Using the search query, we were also able to identity the file name easily.
 
 ### 7. What parent process name spawns cmd with NT AUTHORITY privilege and pid 10716?
 * Flag: ```rundll32.exe```
 * Points: 100
 * Search Query: ```process.pid:10716```
 ![8-parent-process.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/8-parent-process.jpg)
+In additon to the search query, we had to expand to see the details. The name of the process parent is shown here.
 
 ### 8. The previous process was able to access a registry. What is the full path of the registry?
 * Flag: ```HKLM\SYSTEM\ControlSet001\Control\Lsa\FipsAlgorithmPolicy\Enabled```
