@@ -16,6 +16,14 @@ comments: true
 
 ![29-completion.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/29-completion.jpg)
 
+## Blue Team CTF Challenge - Elastic Case
+
+Through this challenge, I learnt to understand how Elastic Security can be used for threat hunting. There were a few different scenarios in this challenge which gave me the opportunity to explore the different features within the Security module. 
+
+Personally, I find the analyzer to be useful when tracing Windows Processes because it gives a bird's-eye view of the processes, the time between each process was executed and all the registry/files/network involved.
+
+You can access the challenge [here][challenge-url].
+
 ## Scenario
 
 An attacker was able to trick an employee into downloading a suspicious file and running it. The attacker compromised the system, along with that, The Security Team did not update most systems. 
@@ -80,31 +88,39 @@ Using the search query, we were also able to identity the file name easily.
 * Points: 100
 * Search Query: ```process.pid:10716```
 ![8-parent-process.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/8-parent-process.jpg)
-In additon to the search query, we had to expand to see the details. The name of the process parent is shown here.
+In addition to the search query, we had to expand to see the details. The name of the process parent is shown here.
 
 ### 8. The previous process was able to access a registry. What is the full path of the registry?
 * Flag: ```HKLM\SYSTEM\ControlSet001\Control\Lsa\FipsAlgorithmPolicy\Enabled```
 * Points: 100
 ![9-registry-path.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/9-registry-path.jpg)
+Expanding registry allows us to see the full path.
 
 ### 9. PowerShell process with pid 8836 changed a file in the system. What was that filename?
 * Flag: ```ModuleAnalysisCache```
 * Points: 100
 ![10-file-change.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/10-file-change.jpg)
+Moving the cursor towards southeast, we see that there is a powershell.exe running process. Expanding this shows us the file name.
 
 ### 10. PowerShell process with pid 11676 created files with the ps1 extension. What is the first file that has been created?
 * Flag: ```__PSScriptPolicyTest_bymwxuft.3b5.ps1```
 * Points: 50
 * Search Query: ```process.pid:11676 and file.extension:ps1```
 ![11-power-shell-process.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/11-power-shell-process.jpg)
+We know that PowerShell script extension will be .ps1. We added this into the search query and was able to find powershell.exe and the first file that was created. 
 
 ### 11. What is the machine's IP address that is in the same LAN as a windows machine?
 * Flag: ```192.168.10.30```
 * Points: 50
 
-![13-end-points.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/13-end-points.jpg)\
+
+![13-end-points.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/13-end-points.jpg)
+
 Upon selecting "Endpoints", we are able to see a list of end points and IP addresses.
+
 ![12-ip-address.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/12-ip-address.jpg)
+
+There are only 3 host machines. We know that the Windows machine has the IP address 192.168.10.10. The other IP address in the same subnet is 192.168.10.30 which is the Ubuntu machine.
 
 ### 12. The attacker login to the Ubuntu machine after a brute force attack. What is the username he was successfully login with?
 * Flag: ```salem```
@@ -114,16 +130,20 @@ Upon selecting "Endpoints", we are able to see a list of end points and IP addre
 ![15-user-authentication.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/15-user-authentication.jpg)\
 ![16-successful-login.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/16-successful-login.jpg)
 
+I'm not sure if there is a more effective way to get this flag. What I did was glance through all the host, pick the one with the highest failed user authentication. I saw that Salem has the closest time between last failure and last success.
+
 ### 13. After that attacker downloaded the exploit from the GitHub repo using wget. What is the full URL of the repo?
 * Flag: ```https://raw.githubusercontent.com/joeammond/CVE-2021-4034/main/CVE-2021-4034.py```
 * Points: 150
 * Search Query: ```wget```
 
-![17-search-term.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/17-search-term.jpg)\
+![17-search-term.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/17-search-term.jpg)
+
 Using the search term ```wget```, we were able to identify the full URL of the Github repo.
+
 ![18-github-url.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/18-github-url.jpg)
 
-### 14. After The attacker runs the exploit, which spawns a new process called pkexec, what is the process's md5 hash?
+### 14. After the attacker runs the exploit, which spawns a new process called pkexec, what is the process's md5 hash?
 * Flag: ```3a4ad518e9e404a6bad3d39dfebaf2f6```
 * Points: 150
 ![19-pkexec.jpg]({{ site.url }}{{ site.baseurl }}/assets/images/2023-2-2-elastic-case/19-pkexec.jpg)
@@ -183,3 +203,4 @@ Using the search term ```wget```, we were able to identify the full URL of the G
 
 
 
+[challenge-url]: https://cyberdefenders.org/blueteam-ctf-challenges/90
