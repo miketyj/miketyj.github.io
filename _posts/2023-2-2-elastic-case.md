@@ -20,7 +20,7 @@ comments: true
 
 Through this challenge, I learnt to understand how Elastic Security can be used for threat hunting. There were a few different scenarios in this challenge which gave me the opportunity to explore the different features within the Security module. 
 
-Personally, I find the analyzer to be useful when tracing Windows Processes because it gives a bird's-eye view of the processes, the time between each process was executed and all the registry/files/network involved.
+Personally, I find the analyzer to be useful when tracing Windows Processes because it gives a bird's-eye view of the processes, the time between each process executed and all the registry/files/network involved.
 
 You can access the challenge [here][challenge-url].
 
