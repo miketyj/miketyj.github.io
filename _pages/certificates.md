@@ -10,12 +10,13 @@ Some of the certificates that I've earned over the years and my thoughts on them
 <br>
 
 ## Cybersecurity Certification
-- [(ISC)2 CISSP - Certified Information Systems Security Professional]({{ site.url }}{{ site.baseurl }}/certificates/cissp/)
+- [(ISC)2 CISSP - Certified Information Systems Security Professional]({{ site.url }}{{ site.baseurl }}/certificates/cissp)
 
+<br>
 ## Blue Team
 ---
 
-
+ 
 <br>
 
 ## Cloud
