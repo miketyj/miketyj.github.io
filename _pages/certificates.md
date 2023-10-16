@@ -1,13 +1,16 @@
 ---
 title: "Certificates"
 layout: archive
-permalink: /certificates.html
+permalink: /certificates/
 classes: wide
 ---
 
-A list of technical certificates that I have obtained can be found on the [Certified Certificates]({{ site.url }}{{ site.baseurl }}/certified) page. These are mostly short reviews on those certificates with links to study resourses, and the stats part is just for my own record on how long it took me to prepare and how I did.
+Some of the certificates that I've earned over the years and my thoughts on them.
 
 <br>
+
+## Cybersecurity Certification
+- [(ISC)2 CISSP - Certified Information Systems Security Professional]({{ site.url }}{{ site.baseurl }}/certificates/cissp/)
 
 ## Blue Team
 ---
