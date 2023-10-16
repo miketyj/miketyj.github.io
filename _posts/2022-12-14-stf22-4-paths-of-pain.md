@@ -10,6 +10,9 @@ tags:
   - Flask
   - Jinja2
 comments: true
+toc: true
+toc_label: "Content"
+toc_sticky: true
 
 ---
 
