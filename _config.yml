@@ -67,9 +67,6 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "DFIR and something something something"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/hellomikesec"
@@ -78,7 +75,7 @@ author:
       url: "https://github.com/miketyj"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/likemikesg"
+      url: https://www.linkedin.com/in/miketyj/
 
 footer:
   links:
@@ -87,10 +84,10 @@ footer:
       url: "https://twitter.com/hellomikesec"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/miketyj"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/"
+      url: https://www.linkedin.com/in/miketyj/
 
 defaults:
   # _posts
@@ -99,6 +96,7 @@ defaults:
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: true
       read_time: true
       comments: true
@@ -111,7 +109,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-
+search: true
 category_archive:
   type: liquid
   path: /categories/
